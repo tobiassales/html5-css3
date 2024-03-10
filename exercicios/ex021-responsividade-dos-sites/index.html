@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste de Responsividade</title>
+    <style>
+      body {
+        background-color: gray;
+      }
+
+      @media screen and (max-width: 265px) {
+        h1,
+        h2 {
+          font-size: 1em;
+        }
+      }
+
+      main {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin: auto;
+
+        min-width: none;
+        max-width: 760px;
+      }
+
+      img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Testando Responsividade</h1>
+      <h2>Testando Responsividade</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fugiat,
+        impedit, asperiores tenetur harum explicabo natus ipsum iste
+        voluptatibus modi voluptate suscipit? Reprehenderit maiores dolores
+        eaque distinctio facere quo excepturi. Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Ex, iste? Architecto accusamus, commodi
+        iste ratione consequatur itaque quisquam, reiciendis placeat provident
+        nostrum possimus officiis maiores in quidem dignissimos velit nihil.
+      </p>
+      <picture>
+        <source
+          media="(max-width: 600px)"
+          srcset="campo-p.jpg"
+          type="image/jpeg"
+        />
+        <img src="campo-m.jpg" alt="Campo" />
+      </picture>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fugiat,
+        impedit, asperiores tenetur harum explicabo natus ipsum iste
+        voluptatibus modi voluptate suscipit? Reprehenderit maiores dolores
+        eaque distinctio facere quo excepturi. Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Ex, iste? Architecto accusamus, commodi
+        iste ratione consequatur itaque quisquam, reiciendis placeat provident
+        nostrum possimus officiis maiores in quidem dignissimos velit nihil.
+      </p>
+    </main>
+  </body>
+</html>

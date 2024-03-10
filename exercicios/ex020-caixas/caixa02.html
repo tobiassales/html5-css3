@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouping Tags</title>
+    <style>
+      body {
+        background-color: rgba(46, 46, 140, 0.637);
+      }
+
+      header {
+        background-color: white;
+        width: 600px;
+        padding: 5px;
+        margin: 10px auto;
+        text-align: center;
+      }
+
+      h1 {
+        box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.493);
+        text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.478);
+      }
+
+      nav {
+        background-color: aquamarine;
+        padding: 3px;
+        /* Para inserir sombra interna só escrever inset
+       box-shadow: inset -6px -7px 20px 0px rgba(0, 0, 0, 0.525); */
+        box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.493);
+      }
+
+      nav > a {
+        color: blue;
+        font-weight: bolder;
+        font-style: italic;
+        margin: 10px;
+      }
+
+      nav > a:hover {
+        background-color: aqua;
+        text-decoration: none;
+        margin: 15px;
+      }
+
+      main {
+        background-color: white;
+        width: 600px;
+        padding: 5px;
+        margin: 10px auto;
+        border-radius: 0px 10px 10px 10px;
+        box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.45);
+      }
+
+      section#assuntos {
+        background-color: #8ab3c2;
+        margin: 5px;
+        padding: 1px;
+      }
+
+      article {
+        background-color: lightblue;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 10px;
+      }
+
+      article > aside {
+        background-color: #8ab3c2;
+        margin: 3px;
+      }
+
+      footer {
+        background-color: blueviolet;
+        color: white;
+        padding: 4px;
+        margin: 0px -10px;
+        text-align: center;
+      }
+
+      footer > p {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      div#bola {
+        background-color: #8ab3c2;
+        height: 100px;
+        width: 600px;
+        margin: 10px auto;
+        border-radius: 50%;
+      }
+
+      div#bola > p {
+        font-family: cursive;
+        text-align: center;
+        padding: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Meu Site</h1>
+      <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </nav>
+    </header>
+    <main>
+      <section id="assuntos">
+        <p>Esportes Alimentação Tecnologia</p>
+      </section>
+      <section id="noticias">
+        <article>
+          <h2>Notícias sobre o Brasil</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+            delectus quaerat neque tempore consequuntur corrupti suscipit facere
+            omnis doloribus illo itaque quidem non magnam, mollitia voluptas
+            dolore nemo recusandae esse?
+          </p>
+          <aside>
+            <p>Artigo Escrito por Tobias Sales</p>
+          </aside>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>Desenvolvido por CursoemVídeo</p>
+    </footer>
+    <div id="bola">
+      <p>Olá!!!</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fontes em CSS</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        /* Medidas recomendadas pela W3C  em , px
+        Medidas Absolutas
+        cm, mm, in, px, pt, pc
+
+        Medidas Relativas
+        em, ex, rem, vw, vh, %
+        16px geralmente = 1em
+        */
+        font-size: 1.5em;
+        font-weight: bolder;
+        font-style: italic;
+
+        /* weight(peso), width(largura), height(altura) */
+      }
+
+      h1 {
+        /* shorthand -> font 
+        - font-style -> font-weight -> font-size -> font-family
+        
+        font-family: serif;
+        font-weight: bolder;
+        font-size: 3em;
+        font-style: italic;       
+        */
+        font: italic bolder 3em arial serif;
+      }
+
+      h2 {
+        font: bold 2em sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Trabalhando com fontes</h1>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur quod
+      alias ipsam rem libero doloribus autem dolore sapiente quisquam ex
+      mollitia repudiandae veritatis, vel voluptate beatae, iste asperiores
+      sequi Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, ut
+      cumque distinctio exercitationem rem autem quisquam dolore, consequatur
+      natus ducimus aut blanditiis vitae consectetur odit voluptates assumenda
+      nisi. Pariatur, repellendus?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+      similique fugit numquam! Maiores voluptas recusandae ipsum id facilis fuga
+      reprehenderit sequi quos? Animi recusandae accusamus culpa exercitationem
+      deleniti sequi hic.
+    </p>
+    <h2>Subtítulo do exercício</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nisi,
+      enim quis iste porro voluptates velit animi, dolor fuga illum accusamus
+      quo reiciendis voluptate sit dolore exercitationem aliquid laborum natus.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      body {
+        background-color: rgb(3, 153, 153);
+      }
+
+      main {
+        background-color: white;
+        min-width: none;
+        max-width: 1200px;
+        margin: 0px auto;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        margin-bottom: 40px;
+        font-size: 42px;
+        text-align: center;
+      }
+
+      div.paragrafo {
+        background-color: antiquewhite;
+        display: inline-block;
+        width: 49%;
+        margin: 1px auto 10px auto;
+      }
+
+      div > p {
+        text-align: justify;
+      }
+
+      div.caixa-principal {
+        background-color: aquamarine;
+        min-width: none;
+        max-width: 1250px;
+        margin: 20px -20px;
+        padding: 10px;
+        text-align: center;
+      }
+
+      div.video {
+        display: inline-block;
+        background-color: aqua;
+
+        width: 48%;
+        margin: 1px;
+
+        position: relative;
+        padding-bottom: 28.8%;
+      }
+
+      div.video > iframe {
+        position: absolute;
+        top: 3%;
+        left: 3%;
+        width: 95%;
+        height: 95%;
+      }
+
+      @media screen and (max-width: 900px) {
+        div.video {
+          width: 90%;
+          padding-bottom: 53.8%;
+        }
+      }
+
+      @media screen and (max-width: 320px) {
+        h1 {
+          font-size: 20px;
+        }
+      }
+
+      img {
+        width: 100%;
+      }
+
+      div.imagem {
+        background-color: bisque;
+        text-align: center;
+        margin: 20px -20px;
+        padding: 10px;
+      }
+
+      img {
+        min-width: 120px;
+        max-width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Testando Vídeos Responsivos</h1>
+      <div class="caixa-principal">
+        <div class="video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/l2UDgpLz20M?si=VjPqOJwUiYh8h6Lh"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="paragrafo">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
+            voluptate provident alias ullam vero quia sunt nobis voluptatem
+            inventore voluptas? Hic, et. Ipsam pariatur sint, autem vitae omnis
+            minima dolorum.
+          </p>
+        </div>
+
+        <div class="video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/l2UDgpLz20M?si=VjPqOJwUiYh8h6Lh"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/l2UDgpLz20M?si=VjPqOJwUiYh8h6Lh"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum officia
+        ipsum numquam corporis quisquam exercitationem ipsam, dolores libero
+        nemo maiores, consectetur cupiditate non eum saepe aliquam expedita
+        commodi porro consequuntur! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Obcaecati, distinctio modi inventore magnam autem aut
+        quaerat tempore quidem aliquam ducimus cumque molestiae, impedit maiores
+        repellendus reprehenderit, quo possimus veniam doloribus?
+      </p>
+
+      <div class="imagem">
+        <img src="paisagem.jpg" alt="Paisagem" />
+        <img src="paisagem.jpg" alt="Paisagem" />
+        <img src="paisagem.jpg" alt="Paisagem" />
+        <img src="paisagem.jpg" alt="Paisagem" />
+      </div>
+
+      <div class="video">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/l2UDgpLz20M?si=VjPqOJwUiYh8h6Lh"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div><img src="paisagem.jpg" alt="Paisagem" /></div>
+      <div class="paragrafo">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima esse
+          temporibus, aspernatur animi, accusantium excepturi magnam vero
+          distinctio, deleniti expedita ratione ipsam sed facere corrupti
+          facilis reprehenderit deserunt non tenetur?
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
