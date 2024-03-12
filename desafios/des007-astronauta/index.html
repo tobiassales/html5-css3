@@ -29,10 +29,46 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center center;
+        background-attachment: fixed;
+
+        position: relative;
+      }
+
+      article {
+        background-color: rgba(135, 206, 250, 0.433);
+        color: black;
+        border-radius: 10px;
+        padding: 5px;
+
+        position: absolute;
+        max-width: 80%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+
+      p {
+        text-align: justify;
       }
     </style>
   </head>
   <body>
-    <main></main>
+    <main>
+      <article>
+        <h1>Testando Imagens de Fundo</h1>
+        <h2>Testando Reposicionamento de containers</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod cumque
+          quia voluptates magni, dolor illum omnis placeat nesciunt autem enim,
+          illo earum, consequuntur maiores iste deserunt eveniet facilis iure!
+          Blanditiis.
+        </p>
+      </article>
+    </main>
   </body>
 </html>
