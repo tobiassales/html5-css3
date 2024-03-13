@@ -9,35 +9,76 @@
   padding: 0px;
 }
 
+html,
 body {
+  min-height: 100vh;
   background-color: white;
 }
 
 header {
   background-color: black;
   color: white;
-  padding: 30px;
+  padding: 50px;
   text-align: center;
 }
 
 header h1 {
   font-family: "Passion One", sans-serif;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 3em;
+  /*  text-transform: uppercase;*/
+  font-variant: small-caps;
 }
 
-header a {
+a {
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
   text-decoration: none;
   color: white;
 }
 
-header a:hover {
+header a:hover,
+footer a:hover {
   text-decoration: underline;
 }
 
-main p {
+section {
   font-family: "Sriracha", Arial, Helvetica, sans-serif;
-  max-width: 175px;
-  margin: 40px 0px;
+  font-size: 1.5em;
+  width: 300px;
+  margin: 60px 0px;
+  padding: 20px;
+}
+
+section.imagem2 {
+  background-color: black;
+  background-image: url("imagens/background001.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  padding: 40px 100px 150px 0px;
+}
+
+section.imagem5 {
+  background-color: black;
+  background-image: url("imagens/background002.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 40px 100px 150px 0px;
+}
+
+div p {
+  background-color: rgba(0, 0, 0, 0.169);
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-size: 0.8em;
+  padding: 10px;
 }
