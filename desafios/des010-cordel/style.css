@@ -45,9 +45,8 @@ footer a:hover {
 section {
   font-family: "Sriracha", Arial, Helvetica, sans-serif;
   font-size: 1.5em;
-  width: 300px;
-  margin: 60px 0px;
-  padding: 20px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 section.imagem2 {
@@ -58,7 +57,6 @@ section.imagem2 {
   background-size: cover;
   background-attachment: fixed;
   color: white;
-  padding: 40px 100px 150px 0px;
 }
 
 section.imagem5 {
@@ -68,7 +66,6 @@ section.imagem5 {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 40px 100px 150px 0px;
 }
 
 div p {
