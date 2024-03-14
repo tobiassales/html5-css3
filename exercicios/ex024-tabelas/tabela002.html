@@ -35,19 +35,26 @@
       padding: 10px;
     }
 
-    /*
     td:nth-child(2) {
       text-align: right;
     }
+
+    /* 
     seleciona o segundo td e aplica qualquer alteração que for feito nele
-    facilita pois não precisa criar classes
-    */
+    facilita pois não precisa criar classes     
     .num {
       text-align: right;
     }
+    */
 
-    tbody > tr {
-      background-color: lightgreen;
+    tbody > tr:nth-child(even) {
+      /* 2n */
+      background-color: lightgray;
+    }
+
+    tbody > tr:nth-child(odd) {
+      /* 2n-1 */
+      background-color: white;
     }
   </style>
   <body>
