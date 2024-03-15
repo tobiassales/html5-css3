@@ -9,15 +9,34 @@
         font-family: Arial, Helvetica, sans-serif;
       }
 
+      main {
+        min-width: 100px;
+        max-width: 600px;
+        background-color: gray;
+        margin: auto;
+      }
+
+      div {
+        overflow-x: auto;
+      }
+
       table {
-        width: 500px;
+        width: 400px;
         border-collapse: collapse;
+        background-color: white;
+        position: relative;
       }
 
       caption {
         font-size: 1.3em;
         font-weight: bolder;
         padding: 8px;
+      }
+
+      thead th {
+        position: sticky;
+        top: 0;
+        z-index: 1;
       }
 
       th,
@@ -33,61 +52,77 @@
       col.cgrupo {
         background-color: aquamarine;
       }
+
+      /* Para deixar a tabela com efeito zebrado nas colunas
+        colgroup>col:nth-child(2n) {
+        background-color: aqua;
+        }*/
     </style>
   </head>
   <body>
-    <h1>Exercício de Tabela</h1>
-    <table>
-      <colgroup>
-        <col class="cnome" />
-        <col class="cgrupo" span="2" />
-        <col class="cprof" />
-      </colgroup>
-      <caption>
-        Cadastro
-      </caption>
-      <tr>
-        <th scope="col">Nome</th>
-        <th scope="col">Sexo</th>
-        <th scope="col">Idade</th>
-        <th scope="col">Profissão</th>
-      </tr>
-      <tr>
-        <td>Ana Maria</td>
-        <td>F</td>
-        <td>25</td>
-        <td>Jornalista</td>
-      </tr>
-      <tr>
-        <td>Ana Maria</td>
-        <td>F</td>
-        <td>25</td>
-        <td>Jornalista</td>
-      </tr>
-      <tr>
-        <td>Ana Maria</td>
-        <td>F</td>
-        <td>25</td>
-        <td>Jornalista</td>
-      </tr>
-      <tr>
-        <td>Ana Maria</td>
-        <td>F</td>
-        <td>25</td>
-        <td>Jornalista</td>
-      </tr>
-      <tr>
-        <td>Ana Maria</td>
-        <td>F</td>
-        <td>25</td>
-        <td>Jornalista</td>
-      </tr>
-      <tr>
-        <td>Ana Maria</td>
-        <td>F</td>
-        <td>25</td>
-        <td>Jornalista</td>
-      </tr>
-    </table>
+    <main>
+      <h1>Exercício de Tabela</h1>
+      <div>
+        <table>
+          <colgroup>
+            <col class="cnome" />
+            <col class="cgrupo" span="2" />
+            <col class="cprof" />
+          </colgroup>
+
+          <caption>
+            Cadastro
+          </caption>
+
+          <thead>
+            <tr>
+              <th scope="col">Nome</th>
+              <th scope="col">Sexo</th>
+              <th scope="col">Idade</th>
+              <th scope="col">Profissão</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Ana Maria</td>
+              <td>F</td>
+              <td>25</td>
+              <td>Jornalista</td>
+            </tr>
+            <tr>
+              <td>Ana Maria</td>
+              <td>F</td>
+              <td>25</td>
+              <td>Jornalista</td>
+            </tr>
+            <tr>
+              <td>Ana Maria</td>
+              <td>F</td>
+              <td>25</td>
+              <td>Jornalista</td>
+            </tr>
+            <tr>
+              <td>Ana Maria</td>
+              <td>F</td>
+              <td>25</td>
+              <td>Jornalista</td>
+            </tr>
+            <tr>
+              <td>Ana Maria</td>
+              <td>F</td>
+              <td>25</td>
+              <td>Jornalista</td>
+            </tr>
+            <tr>
+              <td>Ana Maria</td>
+              <td>F</td>
+              <td>25</td>
+              <td>Jornalista</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
   </body>
 </html>
