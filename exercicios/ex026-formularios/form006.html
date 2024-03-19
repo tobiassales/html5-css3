@@ -6,7 +6,7 @@
     <title>Formulário</title>
   </head>
   <body>
-    <form action="cadastro.php" method="post">
+    <form action="cadastro.php" method="post" enctype="multipart/form-data">
       <p>
         <label for="icor">Cor: </label>
         <input type="color" name="cor" id="icor" value="#00ff00" />
@@ -23,7 +23,11 @@
           value="1"
         />
       </p>
-      /*Ao enviar elementos acima de 3mil bits tem que usar o method='post'*/
+      /*Ao enviar elementos acima de 3mil bits tem que usar o method='post', ou
+      seja, para enviar imagens ou qualquer tipo de arquivo tem que usar esse
+      método */ /*Atenção: Tem que definir o atributo enctype no form com o
+      valor multipart/form-data, enctype possui 3 valores, mas o mais usado e
+      recomendadno para envio de arquivos é o multipart/form-data */
 
       <p>
         <label for="ifoto">Foto</label>
