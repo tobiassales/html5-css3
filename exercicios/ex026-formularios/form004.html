@@ -8,16 +8,40 @@
   <body>
     <h1>Exemplo de Formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
-      <p>
-        <label for="iemail">E-mail</label>
-        <input
-          type="email"
-          name="email"
-          id="iemail"
-          required
-          autocomplete="email"
-        />
-      </p>
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <p>
+          <label for="inome">Nome</label>
+          <input type="text" name="nome" id="inome" required maxlength="20" />
+        </p>
+        <p>
+          <label for="iemail">E-mail</label>
+          <input
+            type="email"
+            name="email"
+            id="iemail"
+            required
+            autocomplete="email"
+            pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          />
+        </p>
+        <p>
+          <label for="itel">Telefone</label>
+          <input
+            type="tel"
+            name="tel"
+            id="itel"
+            required
+            autocomplete="tel"
+            pattern="^\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}$"
+            placeholder="(99)99999-9999"
+            title="O número do telefone precisa ser no formato (99)99999-9999"
+          />
+        </p>
+        <!-- Estudar mais sobre RegEx
+        HTML5 telefone pattern
+        -->
+      </fieldset>
       <p>
         <input type="submit" value="Enviar" />
         <input type="reset" value="Limpar" />
