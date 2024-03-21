@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+/* Configurações gerais / Mobile First */
+
+/* Typical Device Breakpoints 
+Telas pequenas: até(menos que) 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992px até 1199px 
+Telas grandes: de 1200px pra cima
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: blueviolet;
+}
+
+main {
+  position: relative;
+  background-color: white;
+  width: 255px;
+  height: 515px;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.45);
+}
+
+div#imagem {
+  margin: -10px;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 100%;
+  height: 200px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 0.8em;
+  line-height: 1.3em;
+}
+
+div.caixa-login {
+  position: relative;
+  background-color: blueviolet;
+  margin: 5px 0px 5px 0px;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+div.caixa-login > input {
+  position: absolute;
+  background-color: rgb(144, 235, 238);
+  border-radius: 5px;
+  width: 205px;
+  height: 29px;
+  top: 0px;
+  margin: 1px;
+}
+
+span.material-symbols-outlined {
+  color: white;
+}
+
+input#botao-entrar {
+  background-color: darkseagreen;
+  color: white;
+  border-color: darkseagreen;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+input#botao-entrar:hover {
+  background-color: rgb(92, 120, 92);
+}
+
+input#botao-esqc-senha {
+  background-color: white;
+  color: darkseagreen;
+  border-color: darkseagreen;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+input#botao-esqc-senha:hover {
+  background-color: rgb(187, 245, 187);
+}

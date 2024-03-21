@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* Telas de 768px até 992px */
+
+main {
+  width: 80vw;
+  height: 300px;
+}
+
+div#imagem {
+  display: inline-block;
+  width: 45%;
+  height: 300px;
+  margin-right: 5px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+
+div#principal {
+  position: relative;
+  display: inline-block;
+  width: 55%;
+  top: -60px;
+}
