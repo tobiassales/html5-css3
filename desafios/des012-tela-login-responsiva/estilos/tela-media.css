@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* Telas de 768px até 992px */
+/* Telas de 768px até 991px */
 
 main {
   width: 80vw;
@@ -17,7 +17,7 @@ div#imagem {
 img {
   width: 100%;
   height: 100%;
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 20px 0px 0px 20px;
 }
 
 div#principal {
@@ -25,4 +25,8 @@ div#principal {
   display: inline-block;
   width: 55%;
   top: -60px;
+}
+
+div.caixa-login > input {
+  width: 91%;
 }
